@@ -1,0 +1,28 @@
+@mixin style($fontSize, $lineHeight, $letterSpacing) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+@mixin heading {
+  font: normal 600 2.5em/1.25 Poppins;
+}
+
+@mixin heading_desc {
+  font: normal 400 1.25em Poppins;
+  margin: 0.8em 0;
+}
+
+@mixin subheading {
+    font: normal 600 1.5em Poppins;
+    margin-bottom: 0.5em;
+}
+
+@mixin subheading_desc {
+    font: normal 400 0.9375em Poppins;
+    margin-bottom: 0.2666666em;
+}
+
+@mixin subheading_1 {
+    font: normal 600 1.75em Poppins;
+    margin-bottom: 0.5em;
+}

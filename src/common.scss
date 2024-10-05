@@ -1,0 +1,209 @@
+@import "./common-mixins.scss";
+
+$container-2560: 2226px;
+$container-1920: 1620px;
+$container-1700: 1619px;
+$container-1620: 1480px;
+$container-1536: 1356px;
+$container-1440: 1200px;
+$container-1366: 1194px;
+$container-1280: 1113px;
+$container-1194: 1031px;
+$container-1080: 931px;
+$container-992: 700px;
+
+body {
+  font-family: "Poppins", "sans-serif";
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+:focus {
+  outline: none;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+@media (min-width: 2561px) {
+    body {
+        font-size: 18px;
+    }
+  .my-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $container-2560;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 2560px) {
+    body {
+        font-size: 18px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-2560;
+      padding: 0 15px;
+    }
+  }
+
+@media (max-width: 1920px) {
+    body {
+        font-size: 16px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1920;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1700px) {
+    body {
+        font-size: 13px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1700;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1620px) {
+    body {
+        font-size: 13px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1620;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1536px) {
+    body {
+        font-size: 11px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1536;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1440;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    body {
+        font-size: 10px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1366;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    body {
+        font-size: 10px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1280;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1194px) {
+    body {
+        font-size: 10px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1194;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    body {
+        font-size: 10px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-1080;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    body {
+        font-size: 10px;
+    }
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $container-992;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .my-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }

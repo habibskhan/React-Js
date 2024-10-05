@@ -1,0 +1,58 @@
+@import "../../common.scss";
+
+.homesec_1 {
+  margin: 12em 0 2em;
+  .heading {
+    @include heading;
+  }
+  .heading_desc {
+    @include heading_desc;
+  }
+  .list_container {
+    counter-reset: subheading;
+  }
+  .subheading {
+    @include subheading;
+    counter-reset: subheading_desc;
+    margin-top: 0.6666666666666667em;
+    &::before {
+      counter-increment: subheading;
+      content: counter(subheading) ". ";
+    }
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  .subheading_desc {
+    box-shadow: 0 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding: 2em;
+    li {
+      @include subheading_desc;
+      // list-style-type: disc;
+      &::before {
+        counter-increment: subheading_desc;
+        content: counter(subheading) ". " counter(subheading_desc) " ";
+      }
+    }
+  }
+}
+
+.homesec_2 {
+  padding: 5em 0 0;
+  .subheading_1 {
+    @include subheading_1;
+  }
+  .subheading_desc {
+    @include heading_desc;
+  }
+}
+
+.homesec_3 {
+  padding: 5em 0 0;
+}
+
+.homesec_4 {
+  padding: 5em 0 0;
+}

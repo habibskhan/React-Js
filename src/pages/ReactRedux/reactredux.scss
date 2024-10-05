@@ -1,0 +1,16 @@
+@import "../../common.scss";
+
+.reducer_sec1 {
+    padding: 15em 0 6em;
+    .reducer_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+    .num {
+        font-size: 3em;
+        font-weight: bold;
+        color: red;
+    }
+}

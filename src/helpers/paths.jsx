@@ -1,0 +1,16 @@
+export const homeURL = "/";
+export const aboutusURL = "/about-us";
+export const productsURL = "/products";
+export const contactusURL = "/contact-us";
+export const careersURL = "/careers";
+export const formURL = "/form";
+// export const todoListURL = "/todo-list";
+export const todoListURL = "/todo-list/:name/:lName";
+export const todoList1URL = "/todo-list-1";
+export const incDecURL = "/increment-decrement";
+export const propDrillingURL = "/prop-drilling";
+export const reducerURL = "/use-reducer";
+export const reactReduxURL = "/react-redux";
+export const dynamicDataURL = "/dynamic-array";
+export const dynamicDataInnerURL = "/dynamic-array/:slug";
+export const imageGalleryURL = "/image-gallery";

@@ -1,0 +1,41 @@
+@import "../../common.scss";
+
+.customtab_sec1 {
+  .tab_container {
+    position: relative;
+    padding: 0 6em;
+    .row {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .heading {
+    color: #000;
+    display: inline;
+    cursor: pointer;
+  }
+  .heading.active {
+    color: red;
+    border-bottom: 1px solid blue;
+  }
+  .product_arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product_left_arrow,
+  .product_right_arrow {
+    width: 100%;
+    max-width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: contain;
+    z-index: 1;
+    cursor: pointer;
+  }
+}

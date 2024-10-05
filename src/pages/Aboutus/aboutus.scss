@@ -1,0 +1,87 @@
+@import "../../common.scss";
+
+.aboutsec-1 {
+    margin: 12em 0 2em;
+    .heading {
+        @include heading;
+    }
+    .details_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // gap: 4.4375em;
+        gap: 4em;
+        flex-wrap: wrap;
+        padding: 2.8125em 0 3.75em;
+        // padding: 2.5em 0 3.333333em;
+        .details_wrapper {
+          width: 100%;
+          max-width: 16.9375em;
+          height: 100%;
+          min-height: 16.9375em;
+          //   max-height: 16.9375em;
+          border: 1px solid #d6d6d6;
+          text-align: center;
+          //   padding: 4.4375em 0 4.375em;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          cursor: pointer;
+          padding: 3.9375em 0 7.72em;
+          position: relative;
+          // &:nth-child(2) .business_img {
+          //   max-width: 5.091875em;
+          // }
+          // &:nth-child(3) .business_img {
+          //   max-width: 6.1em;
+          // }
+          // &:nth-child(4) .business_img {
+          //   max-width: 4.89375em;
+          // }
+          // &:nth-child(5) .business_img {
+          //   max-width: 4.220625em;
+          // }
+          &.active {
+            box-shadow: -2px 3px 6px #0000002b;
+          }
+        }
+        // .img_container {
+        //   width: 100%;
+        //   // max-width: 4.8125em;
+        //   // max-width: 6.1em;
+        //   max-width: 100%;
+        //   position: absolute;
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: center;
+        //   align-items: center;
+        //   position: absolute;
+        //   top: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   right: 0;
+        // }
+        .business_img {
+          width: 100%;
+          max-width: 4.7625em;
+          // max-width: 100%;
+        }
+        .business_text {
+          //   color: #ba9962;
+          color: #323232;
+          font-size: 1.25em;
+          font-weight: bold;
+          letter-spacing: 1px;
+          line-height: 1.8;
+          text-transform: uppercase;
+          // margin-top: 1.2895em;
+          margin-top: 0;
+          position: absolute;
+          top: 8.65em;
+          &.active {
+            color: #ba9962;
+          }
+        }
+      }
+}

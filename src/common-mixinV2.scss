@@ -1,0 +1,38 @@
+@mixin textStyles($fontSize, $lineHeight, $letterSpacing) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin sectionHeading60 {
+    @include textStyles(3.75em, 1.334, 0px);
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+  @mixin sectionHeading32 {
+    @include textStyles(2em, 1, 0.8px);
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+  @mixin sectionDesc20 {
+    @include textStyles(1.25em, 1.7, 0px);
+    color:rgba($color: #000000, $alpha: 0.6);
+    font-weight: 400;
+  }
+  
+  @mixin sectionDesc16 {
+    @include textStyles(1em, 1.75, 0px);
+    color:rgba($color: #000000, $alpha: 0.6);
+    font-weight: 400;
+  }
+  
