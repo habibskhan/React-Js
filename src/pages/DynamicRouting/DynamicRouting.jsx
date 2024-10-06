@@ -15,7 +15,11 @@ const DynamicRouting = () => {
   return (
     <>
       <section className="dynamic_routing__Sec1">
+        {/* using btn on click and navigate it to url */}
         <NewsCard dataList={newsCenterData} onCardClick={handleCardClick} />
+
+        {/* using link */}
+        <NewsCard dataList={newsCenterData} InterLink={true} />
       </section>
     </>
   );
