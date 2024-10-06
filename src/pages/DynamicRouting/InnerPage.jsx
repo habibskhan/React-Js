@@ -10,7 +10,7 @@ const InnerPage = () => {
   const newsItem = newsCenterData.find((it) => it.slug == slug);
 
   // using filter method
-  // const newsItem = newsCenterData.filter((it) => it.slug == slug);
+  //   const newsItem = newsCenterData.filter((it) => it.slug == slug);
 
   console.log("Params slug", slug);
   console.log("Params url", useParams());
@@ -37,9 +37,11 @@ const InnerPage = () => {
             <h2>{newsItem?.title}</h2>
             <h6>{newsItem?.desc}</h6>
             {newsItem?.innerContent.map((item, i) => (
-              <p style={{ marginBottom: "1em" }} key={i}>
-                {item}
-              </p>
+              <p
+                style={{ marginBottom: "1em" }}
+                key={i}
+                dangerouslySetInnerHTML={{ __html: item }}
+              ></p>
             ))}
           </div>
         </div>
@@ -51,10 +53,12 @@ const InnerPage = () => {
           <div className="content_wrapper">
             <h2>{newsItem[0].title}</h2>
             <h6>{newsItem[0].desc}</h6>
-            {newsCenterData.map((item, i) => (
-              <p style={{ marginBottom: "1em" }} key={i}>
-                {item.innerContent}
-              </p>
+            {newsItem[0].innerContent.map((item, i) => (
+              <p
+                style={{ marginBottom: "1em" }}
+                key={i}
+                dangerouslySetInnerHTML={{ __html: item }}
+              ></p>
             ))}
           </div>
         </div>
