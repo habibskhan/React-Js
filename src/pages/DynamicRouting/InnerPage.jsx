@@ -36,9 +36,9 @@ const InnerPage = () => {
           <div className="content_wrapper">
             <h2>{newsItem?.title}</h2>
             <h6>{newsItem?.desc}</h6>
-            {newsCenterData.map((item, i) => (
+            {newsItem?.innerContent.map((item, i) => (
               <p style={{ marginBottom: "1em" }} key={i}>
-                {item.innerContent}
+                {item}
               </p>
             ))}
           </div>
