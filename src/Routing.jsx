@@ -6,6 +6,8 @@ careersURL,
 contactusURL, 
 dynamicDataInnerURL, 
 dynamicDataURL, 
+dynamicRouteInnerURL, 
+dynamicRouteURL, 
 formURL, 
 homeURL,
 imageGalleryURL,
@@ -36,6 +38,8 @@ import DynamicArry from "./pages/DynamicArray/DynamicArray";
 import DynamicArrayInner from "./pages/DynamicArray/DynamicArray_Inner";
 import ImageGallery from "./pages/Image-Gallery/ImageGallery";
 import HeaderV2 from "./compnents/HeaderV2/HeaderV2";
+import DynamicRouting from "./pages/DynamicRouting/DynamicRouting";
+import InnerPage from "./pages/DynamicRouting/InnerPage";
 
 const Routing =  () => {
     return (
@@ -59,6 +63,8 @@ const Routing =  () => {
             <Route path={dynamicDataURL} element={<DynamicArry />} />
             <Route path={dynamicDataInnerURL} element={<DynamicArrayInner />} />
             <Route path={imageGalleryURL} element={<ImageGallery />} />
+            <Route path={dynamicRouteURL} element={<DynamicRouting />} />
+            <Route path={dynamicRouteInnerURL} element={<InnerPage />} />
             {/* <Route exact path="/finalist/:slug" element={<DynamicArrayInner />} /> */}
         </Routes>
         <Footer />
