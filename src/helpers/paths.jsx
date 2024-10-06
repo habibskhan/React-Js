@@ -14,3 +14,5 @@ export const reactReduxURL = "/react-redux";
 export const dynamicDataURL = "/dynamic-array";
 export const dynamicDataInnerURL = "/dynamic-array/:slug";
 export const imageGalleryURL = "/image-gallery";
+export const dynamicRouteURL = "/dynamic-route";
+export const dynamicRouteInnerURL = "/dynamic-route/:slug";
