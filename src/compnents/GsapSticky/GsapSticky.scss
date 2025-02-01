@@ -1,0 +1,148 @@
+.sticky_scroll {
+  position: relative;
+  // .sticky_circle_wrap {
+  //   height: 300vh; // Make sure scrolling works
+  //   margin-top: 15em;
+
+  //   .sticky_circle {
+  //     justify-content: center;
+  //     align-items: center;
+  //     width: 100%;
+  //     height: 100vh;
+  //     display: flex;
+  //     position: sticky;
+  //     top: 0;
+  //     overflow: hidden;
+  //   }
+
+  //   .sticky_circle_element {
+  //     width: 100%;
+  //     height: 100%;
+  //     display: flex;
+  //     flex-direction: column; // Stack elements vertically
+  //     position: relative;
+  //     overflow: hidden;
+  //   }
+
+  //   .next_data_1,
+  //   .next_data_2 {
+  //     width: 100%;
+  //     height: 100vh;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+
+  //   .next_data_1 {
+  //     background: #f0f0f0; // Light background
+  //   }
+
+  //   .next_data_2 {
+  //     background: #333; // Dark background
+  //     color: white;
+  //     // position: absolute;
+  //     // top: 100%; // Start hidden below
+  //     width: 100%;
+  //   }
+  // }
+
+  .scroll_row {
+    margin: 0 auto;
+    // height: 100vh;
+    overflow: hidden;
+    .scroll_col {
+      padding: 0;
+      position: relative;
+      &:nth-child(2n + 1) {
+        padding-right: 0.5em;
+      }
+      .text_container {
+        margin-bottom: 3.75em;
+        .section_title44 {
+          margin-bottom: 0.91em;
+        }
+      }
+      .content_wrapper {
+        padding-left: 2.5em;
+        // height: 42vh;
+        height: 100vh;
+        .section_title48 {
+          margin-bottom: 0.834em;
+        }
+        .section_desc {
+          opacity: 0.8;
+          max-width: 30.6em;
+        }
+      }
+      .common_cta_wrapper {
+        margin-top: 10.5em;
+      }
+      .img_box {
+        // position: relative;
+        // height: 42vh;
+        position: absolute;
+        .product_img {
+          width: 100%;
+          max-width: 100%;
+          border-radius: 50%;
+          margin-top: 1.5em;
+          height: auto;
+          // position: absolute;
+          // height: 100%;
+          // left: 0;
+        }
+      }
+    }
+    // .left_box {
+    //   height: 42vh;
+    //   height: 100vh;
+    // }
+    // .right_box {
+    //   height: 100vh;
+    // }
+  }
+
+  /* Scroll Progress Line */
+  /* Scroll Progress Line */
+  .scroll_progress_wrapper {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: rgba(200, 200, 200, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .scroll_progress {
+      width: 4px;
+      height: 100%;
+      background: #ff6f61;
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+
+    /* Numbers placed in the middle of each progress line segment */
+    .scroll_number {
+      font-size: 14px;
+      font-weight: bold;
+      color: #999;
+      position: absolute;
+      left: 10px; /* Adjusted to align better */
+      transform: translateY(-50%); /* Center the numbers */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Adding line markers for better visual alignment */
+    .scroll_marker {
+      width: 20px;
+      height: 1px;
+      background: #999;
+      position: absolute;
+      left: -8px;
+    }
+  }
+}
