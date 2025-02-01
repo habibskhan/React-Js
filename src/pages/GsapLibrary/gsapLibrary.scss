@@ -1,0 +1,61 @@
+.img_wrapper {
+  margin-top: 15em;
+  //   position: "sticky"; // Keep it in view for animation
+  //   top: "50%"; // Adjust positioning
+  //   left: "50%";
+  //   transform: "translate(-50%, -50%)";
+  //   .circle_img {
+  //     width: "100%";
+  //     height: "100dvh";
+  //     border-radius: "50%";
+  //     background-color: "rgba(0, 128, 255, 0.5)";
+  //     margin: "0 auto";
+  //     position: "sticky"; // Keep it in view for animation
+  //     top: "50%"; // Adjust positioning
+  //     left: "50%";
+  //     transform: "translate(-50%, -50%)";
+  //   }
+}
+
+.gsap_sec1 {
+  // margin-top: 15em;
+  .sticky_circle_wrap {
+    height: 300dvh;
+    margin-top: 15em;
+    .sticky_circle {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100dvh;
+      display: flex;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+    .sticky_circle_element {
+      clip-path: circle(25% at 50% 50%);
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: relative;
+    }
+    .absolute_img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.4s;
+      position: absolute;
+      inset: 0%;
+    }
+  }
+}
+
+.gsap_sec2 {
+  padding: 7.5em 0;
+}
+
+.gsap_sec3 {
+  padding: 7.5em 0;
+}
